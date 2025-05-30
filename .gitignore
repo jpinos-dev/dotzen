@@ -1,3 +1,37 @@
-.DS_Store
+# Binarios compilados
 bin/
 dist/
+
+# Archivos de Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Archivos de test
+*.test
+
+# Output de la cobertura de tests de Go
+*.out
+
+# Directorio de dependencias de Go
+vendor/
+
+# Archivos específicos del editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de log
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
