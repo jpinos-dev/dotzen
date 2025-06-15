@@ -40,7 +40,7 @@ func (m *Manager) CreateAll() error {
 // createSingle crea un symlink individual
 func (m *Manager) createSingle(mapping config.SymlinkMapping) error {
 	sourcePath := filepath.Join(m.dotfilesPath, mapping.Source)
-	targetPath := filepath.Join(m.homeDir, mapping.Source)
+	targetPath := filepath.Join(m.homeDir, mapping.Target)
 
 	if _, err := os.Stat(sourcePath); os.IsNotExist(err) {
 		fmt.Printf("⚠️ Archivo fuente no encontrado, saltando: %s\n", sourcePath)

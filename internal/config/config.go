@@ -38,5 +38,7 @@ func getDefaultSymlinks() []SymlinkMapping {
 	return []SymlinkMapping {
 		{Source: "nvim", Target: ".config/nvim"},
 		{Source: "alacritty", Target: ".config/alacritty"},
+		{Source: "tmux/.tmux.conf", Target: ".tmux.conf"},
+		{Source: "ghostty", Target: ".config/ghostty"},
 	}
 }
